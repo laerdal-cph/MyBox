@@ -100,7 +100,7 @@ namespace MyBox.EditorTools
 		/// </summary>
 		private static void OnPlayModeStateChanged(PlayModeStateChange state)
 		{
-			if (state == PlayModeStateChange.ExitingEditMode && BeforePlaymode != null) BeforePlaymode();
+			// if (state == PlayModeStateChange.ExitingEditMode && BeforePlaymode != null) BeforePlaymode();
 		}
 
 		private static void RawInputHandler()
