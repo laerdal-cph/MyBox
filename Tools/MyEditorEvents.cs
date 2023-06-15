@@ -55,15 +55,15 @@ namespace MyBox.EditorTools
 		/// <summary>
 		/// On Editor Save
 		/// </summary>
-		private static string[] OnWillSaveAssets(string[] paths)
-		{
-			// Prefab creation enforces SaveAsset and this may cause unwanted dir cleanup
-			if (paths.Length == 1 && (paths[0] == null || paths[0].EndsWith(".prefab"))) return paths;
-
-			OnSave?.Invoke();
-
-			return paths;
-		}
+		// private static string[] OnWillSaveAssets(string[] paths)
+		// {
+		// 	// Prefab creation enforces SaveAsset and this may cause unwanted dir cleanup
+		// 	if (paths.Length == 1 && (paths[0] == null || paths[0].EndsWith(".prefab"))) return paths;
+		//
+		// 	OnSave?.Invoke();
+		//
+		// 	return paths;
+		// }
 
 		private static void CheckOnceOnEditorStart()
 		{

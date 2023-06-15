@@ -9,10 +9,10 @@ namespace MyBox
 	public class UIImageBasedButton : MonoBehaviour, ISelectHandler, IDeselectHandler, IPointerEnterHandler, IPointerExitHandler
 	{
 #pragma warning disable 0649
-		[SerializeField, MustBeAssigned] private Sprite _regularSprite;
-		[SerializeField, MustBeAssigned] private Sprite _regularSelectedSprite;
-		[SerializeField, MustBeAssigned] private Sprite _clickedSprite;
-		[SerializeField, MustBeAssigned] private Sprite _clickedSelectedSprite;
+		[SerializeField] private Sprite _regularSprite;
+		[SerializeField] private Sprite _regularSelectedSprite;
+		[SerializeField] private Sprite _clickedSprite;
+		[SerializeField] private Sprite _clickedSelectedSprite;
 #pragma warning restore 0649
 
 		public Action<bool> OnToggled;

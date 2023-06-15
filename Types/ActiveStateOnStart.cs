@@ -5,7 +5,7 @@ namespace MyBox
 	public class ActiveStateOnStart : MonoBehaviour
 	{
 		public bool Active;
-		[MustBeAssigned] public GameObject Target;
+		public GameObject Target;
 
 		private void Awake()
 		{

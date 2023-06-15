@@ -9,7 +9,7 @@ namespace MyBox
 	[ExecuteInEditMode]
 	public class UIRelativePosition : MonoBehaviour
 	{
-		[MustBeAssigned] public RectTransform Target;
+		public RectTransform Target;
 
 		[Separator("Set X/Y, with optional offset")]
 		public OptionalFloat SetX = OptionalFloat.WithValue(0);

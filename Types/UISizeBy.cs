@@ -8,7 +8,7 @@ namespace MyBox
 	[ExecuteInEditMode]
 	public class UISizeBy : MonoBehaviour
 	{
-		[MustBeAssigned] public RectTransform CopySizeFrom;
+		public RectTransform CopySizeFrom;
 
 		[Separator("CopyWidth/Height, Set optional offset")]
 		public OptionalInt CopyWidth = OptionalInt.WithValue(0);
